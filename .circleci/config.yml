@@ -45,7 +45,6 @@ jobs:
              . .devops/bin/activate
              make lint
            
-    steps:
        - setup_remote_docker:
        - run: 
            command: |
