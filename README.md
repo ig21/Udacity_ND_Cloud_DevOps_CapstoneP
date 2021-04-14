@@ -3,9 +3,9 @@
 
 Note: some scripts and templates shared as part of course materials used in the project.
 
-## Step 1 - Scope of the project 
+## Step 1 - Scope of the project reflected in the pipeline design
 
-# Pipeline description
+### Pipeline description
 
 - Clone git repository
 - Builing nano-app image performing linting as part of the build
@@ -21,7 +21,7 @@ I decided to choose Jenkins, see below the steps
 
 ## Step 3 - Pick AWS Kubernetes as a Service, or build your own Kubernetes cluster
 
-I have chosed AWS EKS. See steps below to deploy kubernetes. 
+I have chosen AWS EKS. See steps below to deploy kubernetes. 
 
 Application deployment into AWS EKS are atumated and included as part of capstone-pipeline. 
 
@@ -63,10 +63,11 @@ Jenkins file reflects the steps descibed in Step1 Pipeline description
 ## Manual test of the application deployment 
 
 In order to check what is the URL, go to the Load balancer section in EC2 dashboard  and select specific load balancer. Copy provided DNS and open it in chrome.
-You should see the following page
-
-## Hello Udacity!
+You should see the following page:
+```
+### Hello Udacity!
 
 This is my Capstone project nano application.
 
 Code change can be seen in blue/green deployment approach.	 
+```
