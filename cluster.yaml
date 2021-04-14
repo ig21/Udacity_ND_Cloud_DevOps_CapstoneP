@@ -1,0 +1,12 @@
+apiVersion: eksctl.io/v1alpha5
+kind: ClusterConfig
+
+metadata:
+  name: nanocluster
+  region: us-east-1
+
+
+nodeGroups:
+  - name: nanondgr
+    instanceType: m5.large
+    desiredCapacity: 2
