@@ -17,8 +17,8 @@ install:
 	# This should be run from inside a virtualenv as user Jenkins
 	pip3 install --upgrade pip --user &&\
 	pip3 install -r requirements.txt --user
-	wget -O /usr/lib/jenkins/hadolint https://github.com/hadolint/hadolint/releases/download/v1.16.3/hadolint-Linux-x86_64
-	chmod +x /usr/lib/jenkins/hadolint
+	wget -O /var/lib/jenkins/hadolint https://github.com/hadolint/hadolint/releases/download/v1.16.3/hadolint-Linux-x86_64
+	chmod +x /var/lib/jenkins/hadolint
 
 
 test:
