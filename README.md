@@ -14,7 +14,7 @@ Note: some scripts and templates shared as part of course materials used in the 
 
 ## Step 2 - Pipeline implemetation 
 
-I decided to choose Jenkins, see below the steps 
+I decided to choose Jenkins, see the steps below: 
 
 - Create an EC2 instance
 - Install and configure Jenkins 
