@@ -1,0 +1,17 @@
+apiVersion: v1 
+kind: ConfigMap 
+metadata: 
+  name: aws-auth 
+  namespace: kube-system 
+data: 
+  mapRoles: | 
+    - rolearn: arn:aws:iam::003313884951:role/eksctl-nanocluster-nodegroup-nano-NodeInstanceRole-1GJL73KWY3TXF
+      username: system:node:{{EC2PrivateDNSName}} 
+      groups: 
+        - system:bootstrappers 
+        - system:nodes 
+  mapUsers: | 
+    - userarn: arn:aws:iam::003313884951:user/udacity
+      username: udacity
+      groups: 
+        - system:masters
