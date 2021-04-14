@@ -45,6 +45,11 @@ jobs:
              . .devops/bin/activate
              make lint
            
+  build_publish:
+    docker:
+       - image: docker:latest
+    working_directory: ~/repo
+    steps:
        - setup_remote_docker:
        - run: 
            command: |
