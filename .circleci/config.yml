@@ -44,3 +44,10 @@ jobs:
         command: |-
           . .devops/bin/activate
           make lint
+
+    - deploy:
+        name: Publish application to docker hub
+        command: |
+            docker login -e $DOCKER_HUB_EMAIL -u $DOCKER_HUB_USER_ID $DOCKER_HUB_PWD
+            docker tag capstone-app $DOCKER_HUB_USER_ID/capstone-app:latest
+            docker push $DOCKER_HUB_USER_ID/dockerapp:latest
