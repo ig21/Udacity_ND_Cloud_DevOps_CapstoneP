@@ -31,6 +31,8 @@ jobs:
           chmod +x /bin/hadolint
           # Install pylint
           pip3 install pylint
+          # Install flask
+          pip3 install Flask
     - save_cache:
           paths:  
             - ./.devops
