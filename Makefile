@@ -9,7 +9,7 @@
 setup:
 	# Create python virtualenv & source it
 	#apt-get -y install python3-venv
-	sudo yum install -y install python3
+	#sudo yum install -y install python3
 	python3 -m venv .devops
 	#source .devops/bin/activate
 	. .devops/bin/activate
@@ -20,8 +20,8 @@ install:
 	#pip3 install -r requirements.txt
 	pip3 install --upgrade pip --user &&\
 	pip3 install -r requirements.txt --user
-	sudo wget -O /bin/hadolint https://github.com/hadolint/hadolint/releases/download/v1.16.3/hadolint-Linux-x86_64
-	sudo chmod +x /bin/hadolint
+	wget -O /bin/hadolint https://github.com/hadolint/hadolint/releases/download/v1.16.3/hadolint-Linux-x86_64
+	chmod +x /bin/hadolint
 
 
 test:
