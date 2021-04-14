@@ -23,7 +23,7 @@ I decided to choose Jenkins, see below the steps
 
 I have chosen AWS EKS. See steps below to deploy kubernetes. 
 
-Application deployment into AWS EKS are atumated and included as part of capstone-pipeline. 
+Application deployment into AWS EKS is automated and included as part of capstone-pipeline stages. 
 
 - Clone this repository to EC2 created in Step 2 
 - Create CloudFormation stack using commands below ( yaml and paramters files located in config directory):
