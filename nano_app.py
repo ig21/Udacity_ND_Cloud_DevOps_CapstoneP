@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 @app.route("/")
 def home():
-    html = f"<h3>Hello Udacity!</h3><p>This is my Capstone project nano application. </p> \
+    html = "<h3>Hello Udacity!</h3><p>This is my Capstone project nano application. </p> \
              <p><font color=green>Code change can be seen in blue/green deployment approach.</font></p>"
     return html.format(format)
 
